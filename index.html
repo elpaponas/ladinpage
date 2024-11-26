@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mediclick - Sistema de Gestión de Citas Médicas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@1.5.0/dist/flowbite.min.js"></script>
+  <style>
+    .carousel img {
+      width: 80%;
+      height: auto;
+      margin: 0 auto;
+    }
+    .section-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .section-content:nth-child(even) .image-container {
+      order: 2;
+    }
+    .section-content:nth-child(odd) .image-container {
+      order: 1;
+    }
+    .card {
+      @apply bg-white p-6 rounded-lg shadow-lg;
+      transition: transform 0.2s ease-in-out;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+    }
+    .icon-click {
+      font-size: 2rem;
+      color: white;
+    }
+    .card-problema {
+      background-color: #F9FAFB;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body class="font-sans bg-gray-50 text-gray-900">
+
+  <!-- Navbar -->
+  <header class="bg-indigo-600 text-white p-6">
+    <div class="container mx-auto flex items-center justify-between">
+      <div class="flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon-click h-8 w-8 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 9l7-7 7 7" />
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v6m0 0l4-4m-4 4l-4-4" />
+        </svg>
+        <h1 class="text-3xl font-bold">Mediclick</h1>
+      </div>
+    </div>
+  </header>
+
+<!-- Imagen Estática con Marco Bonito -->
+<section class="flex justify-center mt-6">
+    <div class="relative w-[95%] sm:w-[80%] md:w-[60%] h-[350px] sm:h-[450px] overflow-hidden rounded-lg border-4 border-gray-300 shadow-lg hover:shadow-xl bg-gray-200 transition-all duration-300 ease-in-out">
+      <img src="img/image1.png" class="w-full h-full object-cover rounded-lg" alt="Médico 1">
+    </div>
+</section>
+
+  
+  
+  
+
+<!-- Sección de Problema -->
+<section id="problema" class="py-20 bg-blue-100">
+    <div class="container mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-extrabold text-gray-800 mb-6">El Problema a Resolver</h2>
+        </div>
+        <!-- Card para el Problema -->
+        <div class="mx-auto max-w-4xl bg-white bg-opacity-70 p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105">
+            <p class="text-lg text-gray-600 leading-relaxed">
+                Los consultorios enfrentan dificultades para organizar los horarios de los médicos debido a la carga administrativa de la gestión manual de citas. Esto, combinado con la falta de flexibilidad para los pacientes al agendar y modificar citas, convierte el proceso en una tarea pesada.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+  
+  
+
+  <!-- Sección de Solución -->
+  <section id="solucion" class="py-20 bg-gradient-to-r from-indigo-500 to-purple-600 text-white">
+    <div class="container mx-auto">
+      <div class="section-content">
+        <div class="image-container w-full sm:w-1/2">
+          <img src="img/image2.png" alt="Médico 2" class="w-full rounded-lg shadow-md">
+        </div>
+        <div class="text-content w-full sm:w-1/2">
+          <h2 class="text-4xl font-bold mb-6">La Solución de Mediclick</h2>
+          <p class="text-lg">
+            Mediclick es un sistema de gestión de citas médicas intuitivo y eficiente que permite a los pacientes agendar citas médicas, a los doctores gestionar sus horarios y a los administradores supervisar el flujo de citas y usuarios en el sistema.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Sección de Características Principales -->
+<section id="caracteristicas" class="py-20">
+    <div class="container mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold text-indigo-600 mb-6">Características Principales</h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div class="card w-full">
+          <div class="flex items-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+            <h3 class="ml-4 text-2xl font-semibold">Agendamiento Rápido y Eficaz</h3>
+          </div>
+          <p class="text-gray-700">Los pacientes pueden agendar citas médicas de manera rápida y sencilla, sin complicaciones.</p>
+        </div>
+        <div class="card w-full">
+          <div class="flex items-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12h14m-7 7h7" />
+            </svg>
+            <h3 class="ml-4 text-2xl font-semibold">Eficiencia y Ahorro de Tiempo</h3>
+          </div>
+          <p class="text-gray-700">La automatización de citas mejora la eficiencia operativa de los médicos y pacientes, ahorrando tiempo y recursos.</p>
+        </div>
+        <div class="card w-full">
+          <div class="flex items-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+            <h3 class="ml-4 text-2xl font-semibold">Gestión de Información Centralizada</h3>
+          </div>
+          <p class="text-gray-700">Toda la información de las citas y pacientes se maneja de forma centralizada y segura.</p>
+        </div>
+  
+        <!-- Nueva Card para Notificaciones de Recordatorio -->
+        <div class="card w-full">
+          <div class="flex items-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c3.5 0 6.5 2.7 6.5 6s-3 6-6.5 6S5.5 14.3 5.5 11s3-6 6.5-6zM12 6v2m0 4v6m4-2h2m-10-2H6m8 4h2m-10 0H6" />
+            </svg>
+            <h3 class="ml-4 text-2xl font-semibold">Recordatorio de Citas</h3>
+          </div>
+          <p class="text-gray-700">Los pacientes y médicos recibirán notificaciones automáticas de recordatorio sobre sus citas próximas, evitando olvidos y mejorando la puntualidad.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <!-- Sección de Beneficios -->
+  <section id="beneficios" class="py-20 bg-gray-100">
+    <div class="container mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold text-indigo-600 mb-6">Beneficios de Mediclick</h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card">
+          <div class="flex items-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12h14m-7 7h7" />
+            </svg>
+            <h3 class="ml-4 text-2xl font-semibold">Eficiencia y Ahorro de Tiempo</h3>
+          </div>
+          <p class="text-gray-700">La automatización de citas mejora la eficiencia operativa de los médicos y pacientes, ahorrando tiempo y recursos.</p>
+        </div>
+        <div class="card">
+          <div class="flex items-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12h14m-7 7h7" />
+            </svg>
+            <h3 class="ml-4 text-2xl font-semibold">Accesibilidad desde Cualquier Lugar</h3>
+          </div>
+          <p class="text-gray-700">Los pacientes pueden agendar citas desde cualquier dispositivo, mejorando la accesibilidad.</p>
+        </div>
+        <div class="card">
+          <div class="flex items-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+            <h3 class="ml-4 text-2xl font-semibold">Gestión de Información Centralizada</h3>
+          </div>
+          <p class="text-gray-700">Toda la información de las citas y pacientes se maneja de forma centralizada y segura.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+</body>
+</html>
